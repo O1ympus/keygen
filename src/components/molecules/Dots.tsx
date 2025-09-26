@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Dot } from './Dot.tsx';
+import { Dot } from '../atoms/Dot.tsx';
 
 export const Dots: React.FC = () => {
   return (

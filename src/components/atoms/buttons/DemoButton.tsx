@@ -1,21 +1,17 @@
 import * as React from 'react';
-import cn from 'classnames';
 
 type DemoButtonProps = {
-  filled: boolean;
+  text: string;
 };
 
-export const DemoButton: React.FC<DemoButtonProps> = ({ filled }) => {
+export const DemoButton: React.FC<DemoButtonProps> = ({ text }) => {
   return (
     <button
-      className={cn(
-        {
-          'bg-custom-gray/20': filled,
-        },
-        `border border-1 border-custom-gray py-2 px-4 font-md text-base text-custom-gray`,
-      )}
+      className={`border border-1 border-custom-gray py-2 px-4 font-md
+       text-custom-gray hover:bg-custom-gray/20
+       `}
     >
-      Demo {'|>'}
+      {text}
     </button>
   );
 };

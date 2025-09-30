@@ -9,6 +9,7 @@ export default {
       colors: {
         'primary': '#C778DD',
         'custom-gray': '#ABB2BF',
+        'background': '#282C33',
       },
     },
   },

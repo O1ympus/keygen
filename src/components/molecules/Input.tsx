@@ -10,7 +10,7 @@ export const Input: React.FC<InputProps> = ({ placeholder }) => {
       type="text"
       placeholder={placeholder}
       className={`
-                w-[244.5px] p-2 border border-1 border-custom-gray bg-transparent text-base
+                w-[244.5px] p-2 border border-1 border-custom-gray bg-transparent
                 active:border-white outline-none text-custom-gray
             `}
     />

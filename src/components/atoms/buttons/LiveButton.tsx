@@ -1,21 +1,17 @@
 import * as React from 'react';
-import cn from 'classnames';
 
 type LiveButtonProps = {
-  filled: boolean;
+  text: string;
 };
 
-export const LiveButton: React.FC<LiveButtonProps> = ({ filled }) => {
+export const LiveButton: React.FC<LiveButtonProps> = ({ text }) => {
   return (
     <button
-      className={cn(
-        {
-          'bg-primary/30': filled,
-        },
-        `border border-1 border-primary py-2 px-4 font-md text-base text-white`,
-      )}
+      className={`border border-1 border-primary py-2 px-4 font-md text-white
+        hover:bg-primary/30
+      `}
     >
-      Live {'<~>'}
+      {text}
     </button>
   );
 };

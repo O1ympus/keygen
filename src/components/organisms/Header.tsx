@@ -1,4 +1,4 @@
-import { NavLink } from '../molecules/NavLink.tsx';
+import { NavigationLink } from '../molecules/NavLink.tsx';
 import * as React from 'react';
 import { Logo } from '../molecules/Logo.tsx';
 
@@ -8,7 +8,7 @@ type HeaderProps = {
 export const Header: React.FC<HeaderProps> = ({ linkNames }) => {
   return (
     <header
-      className={`flex justify-between h-[61px] w-full pb-2 pt-8 mb-[62px]
+      className={`flex justify-between h-[61px] w-full pb-2 pt-8
             px-[171px]
         `}
     >
@@ -16,9 +16,9 @@ export const Header: React.FC<HeaderProps> = ({ linkNames }) => {
       <nav>
         <ul className="flex gap-8">
           {linkNames.map((link) => (
-            <NavLink
+            <NavigationLink
               key={link}
-              text={link}
+              text={link !== 'home' ? link : '/'}
             />
           ))}
         </ul>

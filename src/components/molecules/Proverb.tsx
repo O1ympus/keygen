@@ -2,7 +2,7 @@ export const Proverb = () => {
   return (
     <div
       className={`flex flex-col items-end text-white text-2xl w-fit
-          mx-auto px-[171px] mb-[74px]`}
+          mx-auto mb-[74px]`}
     >
       <div className="relative">
         <p className={`font-medium p-8 border border-1 border-custom-gray`}>

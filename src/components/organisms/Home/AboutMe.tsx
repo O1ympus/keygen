@@ -4,9 +4,12 @@ import { Dots } from '../../molecules/Dots.tsx';
 
 export const AboutMe = () => {
   return (
-    <div className={`px-[171px] mb-[112px] flex justify-between gap-[170px]`}>
+    <div className={`mb-[112px] flex justify-between gap-[170px]`}>
       <div className="max-w-[516px]">
-        <Heading text="about-me" />
+        <Heading
+          text="about-me"
+          linePresent={true}
+        />
         <div
           className={`text-custom-gray flex flex-col gap-4
                 mb-[27px]

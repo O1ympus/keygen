@@ -1,7 +1,13 @@
 import { LiveButton } from '../atoms/buttons/LiveButton.tsx';
 import { Dots } from './Dots.tsx';
+import { NavLink } from 'react-router-dom';
+import * as React from 'react';
 
-export const About = () => {
+type AboutProps = {
+  isButtonPresent: boolean;
+};
+
+export const About: React.FC<AboutProps> = ({ isButtonPresent }) => {
   return (
     <div className={`flex justify-between gap-[170px] items-center`}>
       <div className="max-w-[516px]">
@@ -29,7 +35,11 @@ export const About = () => {
             technical expertise and creative solutions to innovative projects.
           </p>
         </div>
-        <LiveButton text="Read more ->" />
+        {isButtonPresent && (
+          <NavLink to="about-me">
+            <LiveButton text="Read more ->" />
+          </NavLink>
+        )}
       </div>
       <div
         className={`relative after:content-[''] after:h-[1px]

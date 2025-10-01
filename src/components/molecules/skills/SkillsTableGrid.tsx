@@ -7,6 +7,7 @@ export const SkillsTableGrid: React.FC = () => {
     <>
       {Object.entries(skills).map(([category, items]) => (
         <SkillTable
+          key={category}
           skillHeading={category}
           skillsArr={items}
         />

@@ -7,8 +7,17 @@ type ContactProps = {
 };
 
 export const Contact: React.FC<ContactProps> = ({ iconName, text }) => (
-  <div className="flex gap-[5px] items-center">
+  <div
+    className={`flex gap-[5px] items-center group cursor-pointer
+  `}
+  >
     <Icon fileName={iconName} />
-    <span className="text-custom-gray">{text}</span>
+    <span
+      className={`text-custom-gray group-hover:text-white
+      transition-all duration-300 ease-in-out
+    `}
+    >
+      {text}
+    </span>
   </div>
 );

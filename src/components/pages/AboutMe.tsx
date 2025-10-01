@@ -4,6 +4,8 @@ import { Title } from '../molecules/Title.tsx';
 import { About } from '../molecules/About.tsx';
 import { SkillsTableGrid } from '../molecules/skills/SkillsTableGrid.tsx';
 import { Heading } from '../molecules/Heading.tsx';
+import { funFacts } from '../../api/Constants.tsx';
+import { BorderedText } from '../atoms/BorderedText.tsx';
 
 export const AboutMe: React.FC = () => {
   return (
@@ -15,15 +17,29 @@ export const AboutMe: React.FC = () => {
           title="about-me"
           subtitle="Who am i?"
         />
-        <About />
+        <About isButtonPresent={false} />
       </div>
 
       <Heading
         text="skills"
         linePresent={false}
       />
-      <div className={`flex gap-4 flex-wrap mb-[187px]`}>
+      <div className={`flex gap-4 flex-wrap mb-[83px]`}>
         <SkillsTableGrid />
+      </div>
+
+      <Heading
+        text="my-fun-facts"
+        linePresent={false}
+      />
+      <div className={`flex gap-4 flex-wrap mb-[162px]`}>
+        {funFacts.map(([text, whiteWords]) => (
+          <BorderedText
+            key={text}
+            text={text}
+            whiteWords={whiteWords}
+          />
+        ))}
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import { NavigationLink } from '../molecules/NavLink.tsx';
+import { NavigationLink } from '../molecules/NavigationLink.tsx';
 import * as React from 'react';
 import { Logo } from '../molecules/Logo.tsx';
 

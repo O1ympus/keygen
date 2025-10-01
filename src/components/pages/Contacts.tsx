@@ -1,3 +1,50 @@
-export const Contacts = () => {
-  return <></>;
+import * as React from 'react';
+import { Sidebar } from '../molecules/Sidebar.tsx';
+import { Title } from '../molecules/Title.tsx';
+import { MessageMe } from '../molecules/MessageMe.tsx';
+import { SupportMe } from '../molecules/SupportMe.tsx';
+import { Heading } from '../molecules/Heading.tsx';
+import { Icon } from '../atoms/Icon.tsx';
+
+export const Contacts: React.FC = () => {
+  return (
+    <div className={`px-[171px] mt-[53px]`}>
+      <Sidebar />
+      <Title
+        title="contacts"
+        subtitle="Who am i?"
+      />
+
+      <div
+        className={`flex justify-between items-center gap-[117px] mb-[25px]`}
+      >
+        <p className="text-custom-gray font-medium max-w-[400px]">
+          I’m interested in freelance opportunities. However, if you have other
+          request or question, don’t hesitate to contact me
+        </p>
+        <div className={`flex gap-[11px] w-fit`}>
+          <SupportMe />
+          <MessageMe />
+        </div>
+      </div>
+
+      <Heading
+        text="all-media"
+        linePresent={false}
+        className={`mb-[22px]`}
+      />
+      <div
+        className={`flex items-center gap-[22px] text-custom-gray mb-[84px]`}
+      >
+        <div className={`flex gap-[5px] items-center`}>
+          <Icon fileName="twitter" />
+          <span>@keygen</span>
+        </div>
+        <div className={`flex gap-[5px]`}>
+          <Icon fileName="twitter" />
+          <span>@keygen</span>
+        </div>
+      </div>
+    </div>
+  );
 };

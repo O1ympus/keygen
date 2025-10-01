@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <footer
       className={`py-8 px-[171px] border-t border-t-1 border-custom-gray
-          w-screen flex flex-col items-center`}
+          w-screen flex flex-col items-center h-fit`}
     >
       <div className="mb-12 flex justify-between items-start w-full">
         <div>

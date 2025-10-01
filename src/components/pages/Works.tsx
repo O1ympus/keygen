@@ -4,18 +4,16 @@ import { Heading } from '../molecules/Heading.tsx';
 import { ProjectCard } from '../molecules/ProjectCard.tsx';
 import { projects } from '../../api/Constants.tsx';
 import { SmallProjectCard } from '../molecules/SmallProjectCard.tsx';
+import { Title } from '../molecules/Title.tsx';
 
 export const Works: React.FC = () => {
   return (
     <div className={`px-[171px] mt-[53px]`}>
       <Sidebar />
-      <div className={`mb-[68px]`}>
-        <h1 className={`font-semibold text-[32px] mb-[14px]`}>
-          <span className="text-primary">/</span>
-          <span className={`text-white`}>projects</span>
-        </h1>
-        <p className={`text-white`}>List of my projects</p>
-      </div>
+      <Title
+        title="projects"
+        subtitle="List of my projects"
+      />
 
       <div>
         <Heading

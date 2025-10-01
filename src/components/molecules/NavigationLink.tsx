@@ -21,7 +21,9 @@ export const NavigationLink: React.FC<NavigationLinkProps> = ({ text }) => {
                 {
                   'text-white': isActive,
                 },
-                `text-custom-gray group-hover:text-white group-active:text-white`,
+                `text-custom-gray group-hover:text-white group-active:text-white
+                  transition-all duration-300 ease-in-out
+                `,
               )}
             >
               {text !== '/' ? text : 'home'}

@@ -6,7 +6,6 @@ import { Skills } from '../organisms/Skills.tsx';
 import { AboutMe } from '../organisms/Home/AboutMe.tsx';
 import { Contacts } from '../organisms/Home/Contacts.tsx';
 import { projects } from '../../api/Constants.tsx';
-import { skills } from '../../api/Constants.tsx';
 
 export const HomePage = () => {
   return (
@@ -15,7 +14,7 @@ export const HomePage = () => {
       <HomeMain />
       <Proverb />
       <Projects projects={projects} />
-      <Skills skills={skills} />
+      <Skills />
       <AboutMe />
       <Contacts />
     </div>

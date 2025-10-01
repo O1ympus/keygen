@@ -4,9 +4,11 @@ import { HomePage } from '../pages/HomePage.tsx';
 import { Works } from '../pages/Works.tsx';
 import { Contacts } from '../pages/Contacts.tsx';
 import { AboutMe } from '../pages/AboutMe.tsx';
+import { ScrollToTop } from '../organisms/ScrollToTop.tsx';
 
 export const Root = () => (
   <HashRouter>
+    <ScrollToTop />
     <Routes>
       <Route
         path="/"

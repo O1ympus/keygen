@@ -9,7 +9,7 @@ export const AboutMe = () => {
         linePresent={true}
         className={`max-w-[516px]`}
       />
-      <About />
+      <About isButtonPresent={true} />
     </div>
   );
 };

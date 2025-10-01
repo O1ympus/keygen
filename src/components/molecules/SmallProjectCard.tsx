@@ -1,38 +1,42 @@
 import { LiveButton } from '../atoms/buttons/LiveButton.tsx';
-import { DemoButton } from '../atoms/buttons/DemoButton.tsx';
 import * as React from 'react';
 import type { Project } from '../../types/Project.ts';
 
 type SmallProjectCardProps = {
-  project: Project;
+  landing: Partial<Project>;
 };
 
 export const SmallProjectCard: React.FC<SmallProjectCardProps> = ({
-  project,
+  landing,
 }) => {
   return (
     <div
-      key={project.title}
-      className={` border border-1 border-white`}
+      key={landing.title}
+      className={`border border-1 border-custom-gray w-[330px] h-fit`}
     >
-      <ul
-        className={`flex gap-2 border-t border-b border-1 
-                      border-white p-2`}
+      <h3
+        className={`p-4 font-medium text-white text-2xl after:block
+        after:h-[1px] after:w-[calc(100%+32px)] after:bg-custom-gray after:mt-3
+        box-content after:-ml-4
+      `}
       >
-        {project.technologies.map((t) => (
-          <li key={t}>
-            <span className="text-custom-gray">{t}</span>
-          </li>
-        ))}
-      </ul>
-      <div className="p-4">
-        <h3 className={`mb-4 font-medium text-white text-2xl`}>
-          {project.title}
-        </h3>
-        <p className="mb-4 text-custom-gray">{project.subtitle}</p>
+        {landing.title}
+      </h3>
+      <div className={`px-4 pb-4`}>
+        <p className="mb-4 text-custom-gray">{landing.subtitle}</p>
         <div className={`flex gap-4`}>
-          <LiveButton text="Demo <~>" />
-          <DemoButton text="Github >=" />
+          <a
+            href={landing.demo}
+            target="_blank"
+          >
+            <LiveButton text="Demo <~>" />
+          </a>
+          <a
+            href={landing.github}
+            target="_blank"
+          >
+            <LiveButton text="Github >=" />
+          </a>
         </div>
       </div>
     </div>

@@ -18,7 +18,10 @@ export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
       </div>
       <div className="flex gap-4">
         {projects.map((project) => (
-          <ProjectCard project={project} />
+          <ProjectCard
+            key={project.title}
+            project={project}
+          />
         ))}
       </div>
     </div>

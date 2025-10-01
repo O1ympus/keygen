@@ -1,25 +1,34 @@
 import * as React from 'react';
+import { NavLink } from 'react-router-dom';
+import cn from 'classnames';
 
-type NavLinkProps = {
+type NavigationLinkProps = {
   text: string;
 };
 
-export const NavLink: React.FC<NavLinkProps> = ({ text }) => {
+export const NavigationLink: React.FC<NavigationLinkProps> = ({ text }) => {
   return (
     <li>
-      <a
-        href="#"
-        className="font-medium group"
+      <NavLink
+        to={text}
+        className={`font-medium group select-none`}
       >
-        <span className="text-primary">#</span>
-        <span
-          className={`text-custom-gray group-hover:text-white
-                        group-active:text-white
-                    `}
-        >
-          {text}
-        </span>
-      </a>
+        {({ isActive }) => (
+          <>
+            <span className="text-primary">#</span>
+            <span
+              className={cn(
+                {
+                  'text-white': isActive,
+                },
+                `text-custom-gray group-hover:text-white group-active:text-white`,
+              )}
+            >
+              {text !== '/' ? text : 'home'}
+            </span>
+          </>
+        )}
+      </NavLink>
     </li>
   );
 };

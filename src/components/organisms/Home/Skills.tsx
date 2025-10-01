@@ -14,9 +14,12 @@ type SkillsProps = {
 
 export const Skills: React.FC<SkillsProps> = ({ skills }) => {
   return (
-    <div className="px-[171px] mb-[112px]">
+    <div className="mb-[112px]">
       <div className="max-w-[391px]">
-        <Heading text="skills" />
+        <Heading
+          text="skills"
+          linePresent={true}
+        />
       </div>
       <div className={`flex gap-[60px] justify-center  pl-8`}>
         <div className={`w-[350px] h-[282px] relative max-w-[40%]`}>

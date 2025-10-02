@@ -7,10 +7,12 @@ import { Heading } from '../molecules/Heading.tsx';
 import { Icon } from '../atoms/Icon.tsx';
 import copy from 'copy-to-clipboard';
 import { toast } from 'react-toastify';
+import { ContactsElements } from '../molecules/AbsoluteElements/ContactsElements.tsx';
 
 export const Contacts: React.FC = () => {
   return (
     <div className={`px-[171px] mt-[53px]`}>
+      <ContactsElements />
       <Sidebar />
       <Title
         title="contacts"

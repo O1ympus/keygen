@@ -6,10 +6,12 @@ import { Skills } from '../organisms/Skills.tsx';
 import { AboutMe } from '../organisms/Home/AboutMe.tsx';
 import { Contacts } from '../organisms/Home/Contacts.tsx';
 import { projects } from '../../api/Constants.tsx';
+import { HomeElements } from '../molecules/AbsoluteElements/HomeElements.tsx';
 
 export const HomePage = () => {
   return (
     <div className={`px-[171px] mt-[62px]`}>
+      <HomeElements />
       <Sidebar />
       <HomeMain />
       <Proverb />

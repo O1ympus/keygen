@@ -53,7 +53,7 @@ export const About: React.FC<AboutProps> = ({ isButtonPresent }) => {
           className="w-[339px] h-[507px]"
         />
         <Dots className="left-1 top-[59px]" />
-        <Dots className="right-4 bottom-[172px] h-14 overflow-hidden" />
+        <Dots className="right-4 bottom-[172px] !h-14 overflow-hidden" />
       </div>
     </div>
   );

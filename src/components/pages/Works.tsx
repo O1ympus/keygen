@@ -5,10 +5,12 @@ import { ProjectCard } from '../molecules/ProjectCard.tsx';
 import { projects, landings } from '../../api/Constants.tsx';
 import { SmallProjectCard } from '../molecules/SmallProjectCard.tsx';
 import { Title } from '../molecules/Title.tsx';
+import { WorksElements } from '../molecules/AbsoluteElements/WorksElements.tsx';
 
 export const Works: React.FC = () => {
   return (
     <div className={`px-[171px] mt-[53px]`}>
+      <WorksElements />
       <Sidebar />
       <Title
         title="projects"

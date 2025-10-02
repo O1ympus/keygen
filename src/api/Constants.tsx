@@ -94,11 +94,12 @@ export const landings = [
 
 export const funFacts: [string, string[]][] = [
   ['I was in Egypt, Poland and Turkey', ['Egypt', 'Poland', 'Turkey']],
+  ['I like pizza and pasta', ['pizza', 'pasta']],
   ['I like autumn more than summer', ['autumn', 'summer']],
+  ['I really enjoy evening walks', ['evening', 'walks']],
   [
     'My favorite movie is "Demolition" with Jake Gyllenhaal',
     ['"Demolition"', 'Jake', 'Gyllenhaal'],
   ],
-  ['I like pizza and pasta', ['pizza', 'pasta']],
-  ['I really enjoy evening walks', ['evening', 'walks']],
+  ['I don’t have any siblings', ['siblings']],
 ];

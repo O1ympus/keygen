@@ -10,7 +10,7 @@ function App() {
     <div
       className={`
             w-screen font-fira bg-background
-            min-h-screen relative
+            min-h-screen relative overflow-hidden
         `}
     >
       <Header linkNames={linkNames} />

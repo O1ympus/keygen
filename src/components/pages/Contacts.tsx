@@ -5,6 +5,8 @@ import { MessageMe } from '../molecules/MessageMe.tsx';
 import { SupportMe } from '../molecules/SupportMe.tsx';
 import { Heading } from '../molecules/Heading.tsx';
 import { Icon } from '../atoms/Icon.tsx';
+import copy from 'copy-to-clipboard';
+import { toast } from 'react-toastify';
 
 export const Contacts: React.FC = () => {
   return (
@@ -36,13 +38,27 @@ export const Contacts: React.FC = () => {
       <div
         className={`flex items-center gap-[22px] text-custom-gray mb-[84px]`}
       >
-        <div className={`flex gap-[5px] items-center`}>
-          <Icon fileName="twitter" />
-          <span>@keygen</span>
-        </div>
-        <div className={`flex gap-[5px]`}>
-          <Icon fileName="twitter" />
-          <span>@keygen</span>
+        <div
+          className={`group cursor-pointer flex gap-[5px] items-center`}
+          onClick={() => {
+            copy('keygen.app');
+            toast.success('Discord name copied!', {
+              style: {
+                color: '#ABB2BF',
+                backgroundColor: '#282C33',
+                border: '1px solid #ABB2BF',
+              },
+            });
+          }}
+        >
+          <Icon name="discord" />
+          <span
+            className={`group-hover:text-white transition-all duration-300
+            ease-in-out
+          `}
+          >
+            keygen.app
+          </span>
         </div>
       </div>
     </div>

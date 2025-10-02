@@ -1,7 +1,10 @@
+import { NavLink } from 'react-router-dom';
+
 export const Logo = () => {
   return (
-    <a
-      href="#"
+    <NavLink
+      to="home"
+      replace
       className="flex gap-2 items-center h-full"
     >
       <img
@@ -10,6 +13,6 @@ export const Logo = () => {
         className="w-4 h-4 object-contain"
       />
       <span className="font-bold text-white">Keygen</span>
-    </a>
+    </NavLink>
   );
 };

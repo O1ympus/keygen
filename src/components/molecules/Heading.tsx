@@ -12,7 +12,7 @@ export const Heading: React.FC<Heading> = ({
   className,
 }) => {
   return (
-    <div className={`flex gap-4 items-center mb-12 ${className}`}>
+    <div className={`flex gap-4 items-center mb-8 md:mb-12 ${className}`}>
       <h2 className="text-[32px] font-medium text-nowrap">
         <span className="text-primary">#</span>
         <span className="text-white">{text}</span>

@@ -1,3 +1,29 @@
+export const about: [string, string[]][] = [
+  [
+    'Full-stack developer with a Bachelor’s degree in Software Engineering. Skilled in JavaScript, TypeScript, React, and with working knowledge of Node.js',
+    [
+      'Full-stack',
+      'developer',
+      'Bachelor’s',
+      'degree',
+      'Software',
+      'Engineering',
+      'JavaScript',
+      'TypeScript',
+      'React',
+      'Node.js',
+    ],
+  ],
+  [
+    'Experienced in building user-friendly and visually polished applications, with strong attention to detail and quality. Able to manage multiple tasks simultaneously and deliver results under pressure',
+    [],
+  ],
+  [
+    'Proficient in English at B2 level, with the ability to communicate effectively in international teams. Motivated to contribute technical expertise and creative solutions to innovative projects',
+    ['English', 'at', 'B2', 'level'],
+  ],
+];
+
 export const skills = {
   Frontend: [
     'JavaScript',
@@ -8,10 +34,10 @@ export const skills = {
     'Sass',
     'Tailwind',
   ],
-  Backend: ['Node.js', 'SQL', 'MySQL', 'MongoDB'],
-  Testing: ['Jest', 'Cypress'],
   Tooling: ['Git', 'Vite', 'Docker', 'ESLint', 'Prettier', 'CI/CD'],
+  Backend: ['Node.js', 'SQL', 'MySQL', 'MongoDB'],
   Methodologies: ['Agile', 'Scrum', 'Kanban', 'SDLC'],
+  Testing: ['Jest', 'Cypress'],
 };
 
 export const projects = [

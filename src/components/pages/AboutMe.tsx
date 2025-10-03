@@ -11,7 +11,7 @@ import { Dots } from '../molecules/Dots.tsx';
 
 export const AboutMe: React.FC = () => {
   return (
-    <div className={`px-[171px] mt-[53px]`}>
+    <div className={`px-4 md:px-6 lg:px-8 xl:px-[171px] mt-[53px]`}>
       <AboutElements />
       <Sidebar />
 

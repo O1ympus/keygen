@@ -5,7 +5,7 @@ export const Logo = () => {
     <NavLink
       to="home"
       replace
-      className="flex gap-2 items-center h-full"
+      className="flex gap-2 items-center h-full z-30"
     >
       <img
         src="../../../public/img/logo/logo-light.svg"

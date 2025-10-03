@@ -10,7 +10,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div
       key={project.title}
-      className={`w-[330px] border border-1 border-custom-gray group cursor-pointer h-fit`}
+      className={`w-full sm:w-[calc(50%-8px)] xl:w-[330px] border border-1 border-custom-gray group cursor-pointer h-fit`}
     >
       <div className={`relative bg-black`}>
         <img
@@ -22,7 +22,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         />
       </div>
       <ul
-        className={`flex gap-2 border-t border-b border-1 
+        className={`flex flex-wrap gap-2 border-t border-b border-1 
                       border-custom-gray p-2`}
       >
         {project.technologies.map((t) => (

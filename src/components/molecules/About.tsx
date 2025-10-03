@@ -2,6 +2,8 @@ import { LiveButton } from '../atoms/buttons/LiveButton.tsx';
 import { Dots } from './Dots.tsx';
 import { NavLink } from 'react-router-dom';
 import * as React from 'react';
+import { about } from '../../api/Constants.tsx';
+import cn from 'classnames';
 
 type AboutProps = {
   isButtonPresent: boolean;
@@ -16,24 +18,22 @@ export const About: React.FC<AboutProps> = ({ isButtonPresent }) => {
                 mb-[27px]
             `}
         >
-          <p>
-            Full-stack developer with a Bachelor’s degree in Software
-            Engineering. Skilled in JavaScript, TypeScript, React, and with
-            working knowledge of Node.js.
-          </p>
-
-          <p>
-            Experienced in building user-friendly and visually polished
-            applications, with strong attention to detail and quality. Able to
-            manage multiple tasks simultaneously and deliver results under
-            pressure.
-          </p>
-
-          <p>
-            Proficient in English at B2 level, with the ability to communicate
-            effectively in international teams. Motivated to contribute
-            technical expertise and creative solutions to innovative projects.
-          </p>
+          {about.map(([text, whiteWords], idx) => (
+            <p key={idx}>
+              {text.split(/([\s,']+)/).map((part, i) => {
+                const clean = part.replace(/^[.,']+|[.,']+$/g, '');
+                return (
+                  <span
+                    key={i}
+                    className={cn({ 'text-white': whiteWords.includes(clean) })}
+                  >
+                    {part}
+                  </span>
+                );
+              })}
+              .
+            </p>
+          ))}
         </div>
         {isButtonPresent && (
           <NavLink to="about-me">
@@ -48,7 +48,7 @@ export const About: React.FC<AboutProps> = ({ isButtonPresent }) => {
             `}
       >
         <img
-          src="../../../../public/img/about.png"
+          src="/img/about.png"
           alt="anonym"
           className="w-[339px] h-[507px]"
         />

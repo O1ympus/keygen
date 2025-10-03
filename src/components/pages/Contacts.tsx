@@ -11,7 +11,7 @@ import { ContactsElements } from '../molecules/AbsoluteElements/ContactsElements
 
 export const Contacts: React.FC = () => {
   return (
-    <div className={`px-[171px] mt-[53px]`}>
+    <div className={`px-4 md:px-6 lg:px-8 xl:px-[171px] mt-[53px]`}>
       <ContactsElements />
       <Sidebar />
       <Title
@@ -23,8 +23,8 @@ export const Contacts: React.FC = () => {
         className={`flex justify-between items-center gap-[117px] mb-[25px]`}
       >
         <p className="text-custom-gray font-medium max-w-[400px]">
-          I’m interested in freelance opportunities. However, if you have other
-          request or question, don’t hesitate to contact me
+          I’m currently seeking a Full-Stack Developer position. If you have any
+          requests or questions, feel free to contact me.
         </p>
         <div className={`flex gap-[11px] w-fit`}>
           <SupportMe />

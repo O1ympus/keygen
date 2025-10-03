@@ -1,8 +1,8 @@
 export const Proverb = () => {
   return (
     <div
-      className={`flex flex-col items-end text-white text-2xl w-fit
-          mx-auto mb-[74px]`}
+      className={`flex flex-col items-end text-white md:text-2xl w-fit
+          mx-auto mb-[74px] sm:text-xl text-base`}
     >
       <div className="relative">
         <p className={`font-medium p-8 border border-1 border-custom-gray`}>

@@ -3,17 +3,19 @@ import { Dots } from './Dots.tsx';
 
 export const HomeMainExtra = () => {
   return (
-    <div className="flex flex-col relative">
+    <div className="flex flex-col items-center relative max-w-[500px] w-full md:w-auto md:max-w-auto">
       <img
         src="../../../public/img/profile.png"
         alt="anonym"
-        className="h-[386px] w-[469px] z-10"
+        className="max-w-full h-auto md:w-[469px] z-10 object-contain"
       />
       <CurrentlyWorkingOn text="Portfolio" />
       <img
         src="../../../public/img/logo/logo-dark.svg"
         alt="elias"
-        className="w-[155px] h-[155px] absolute top-[84px] -left-3"
+        className={`w-[120px] md:w-[155px] md:h-[155px] absolute
+          md:top-[84px] md:-left-3 left-0 top-[50px]
+        `}
       />
       <Dots className="bottom-[93px] right-4" />
     </div>

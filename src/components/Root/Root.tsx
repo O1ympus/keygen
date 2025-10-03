@@ -5,42 +5,45 @@ import { Works } from '../pages/Works.tsx';
 import { Contacts } from '../pages/Contacts.tsx';
 import { AboutMe } from '../pages/AboutMe.tsx';
 import { ScrollToTop } from '../organisms/ScrollToTop.tsx';
+import { BurgerMenuProvider } from '../../context/BurgerMenuProvider';
 
 export const Root = () => (
   <HashRouter>
-    <ScrollToTop />
-    <Routes>
-      <Route
-        path="/"
-        element={<App />}
-      >
+    <BurgerMenuProvider>
+      <ScrollToTop />
+      <Routes>
         <Route
-          index
-          element={<HomePage />}
-        />
-        <Route
-          path="home"
-          element={
-            <Navigate
-              to="/"
-              replace
-            />
-          }
-        />
+          path="/"
+          element={<App />}
+        >
+          <Route
+            index
+            element={<HomePage />}
+          />
+          <Route
+            path="home"
+            element={
+              <Navigate
+                to="/"
+                replace
+              />
+            }
+          />
 
-        <Route
-          path="works"
-          element={<Works />}
-        />
-        <Route
-          path="about-me"
-          element={<AboutMe />}
-        />
-        <Route
-          path="contacts"
-          element={<Contacts />}
-        />
-      </Route>
-    </Routes>
+          <Route
+            path="works"
+            element={<Works />}
+          />
+          <Route
+            path="about-me"
+            element={<AboutMe />}
+          />
+          <Route
+            path="contacts"
+            element={<Contacts />}
+          />
+        </Route>
+      </Routes>
+    </BurgerMenuProvider>
   </HashRouter>
 );

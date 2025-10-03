@@ -1,4 +1,5 @@
 import { Logo } from '../molecules/Logo.tsx';
+import { Icon } from '../atoms/Icon.tsx';
 
 export const Footer = () => {
   const handleScroll = () => {
@@ -10,15 +11,56 @@ export const Footer = () => {
 
   return (
     <footer
-      className={`py-8 px-[171px] border-t border-t-1 border-custom-gray
-          w-screen flex flex-col items-center h-fit`}
+      className={`py-8 px-4 md:px-6 lg:px-8 xl:px-[171px] border-t border-t-1 border-custom-gray
+        w-screen flex flex-col items-center h-fit
+      `}
     >
-      <div className="mb-12 flex justify-between items-center w-full">
+      <div
+        className={`mb-12 flex flex-col md:flex-row justify-between 
+        md:items-center w-full items-start gap-y-10 max-w-[1920px] mx-auto
+      `}
+      >
         <div>
           <Logo />
           <p className="text-white mt-4">Full stack developer</p>
         </div>
-        <div>
+        <div
+          className={`flex items-center justify-between w-full md:w-auto gap-10
+          
+        `}
+        >
+          <div>
+            <h3 className={`font-medium text-white text-2xl mb-3`}>Media</h3>
+            <div className="flex gap-2 items-center">
+              <a
+                href="https://t.me/keygen_exe"
+                target="_blank"
+              >
+                <Icon
+                  name="telegram"
+                  className={`hover:text-white`}
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/vladyslav-matkovskyi-477474332/"
+                target="_blank"
+              >
+                <Icon
+                  name="linkedin"
+                  className={`hover:text-white`}
+                />
+              </a>
+              <a
+                href="https://github.com/O1ympus"
+                target="_blank"
+              >
+                <Icon
+                  name="github"
+                  className={`hover:text-white`}
+                />
+              </a>
+            </div>
+          </div>
           <button
             className={`border border-1 border-custom-gray rounded-full
               w-12 h-12 flex items-center justify-center group hover:border-white
@@ -46,7 +88,9 @@ export const Footer = () => {
           </button>
         </div>
       </div>
-      <p className="text-custom-gray">© Copyright 2025. Made by Keygen</p>
+      <p className="text-custom-gray text-center">
+        © Copyright 2025. Made by Keygen
+      </p>
     </footer>
   );
 };

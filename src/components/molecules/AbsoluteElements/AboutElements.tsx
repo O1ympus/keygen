@@ -3,7 +3,7 @@ import { Dots } from '../Dots.tsx';
 
 export const AboutElements = () => {
   return (
-    <>
+    <div className={`hidden xl:block`}>
       <AbsoluteElement
         className={`top-[256px] -right-[87px] w-[155px] h-[155px]`}
       />
@@ -13,6 +13,6 @@ export const AboutElements = () => {
       <Dots className={`-right-[23px] bottom-[300px]`} />
       <Dots className={`-right-[45px] top-[850px]`} />
       <Dots className={`-left-[31px] top-[400px] !h-[39px]`} />
-    </>
+    </div>
   );
 };

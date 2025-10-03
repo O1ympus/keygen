@@ -10,8 +10,8 @@ export const Contacts = () => {
           linePresent={true}
         />
         <p className="text-custom-gray font-medium">
-          I’m interested in freelance opportunities. However, if you have other
-          request or question, don’t hesitate to contact me
+          I’m currently seeking a Full-Stack Developer position. If you have any
+          requests or questions, feel free to contact me.
         </p>
       </div>
       <div className="flex items-end">

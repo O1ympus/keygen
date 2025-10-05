@@ -6,8 +6,8 @@ import { SkillsTableGrid } from '../molecules/skills/SkillsTableGrid.tsx';
 
 export const Skills: React.FC = () => {
   return (
-    <div className="mb-[60px] md:mb-[112px]">
-      <div className="max-w-[391px]">
+    <div className="mb-[80px] lg:mb-[112px]">
+      <div className="md:max-w-[391px]">
         <Heading
           text="skills"
           linePresent={true}

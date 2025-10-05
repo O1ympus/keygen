@@ -15,7 +15,7 @@ export const Contact: React.FC<ContactProps> = ({ iconName, text }) => (
     <Icon name={iconName} />
     <span
       className={`text-custom-gray group-hover:text-white
-      transition-all duration-300 ease-in-out
+      transition-all duration-300 ease-in-out text-sm sm:text-base
     `}
     >
       {text}

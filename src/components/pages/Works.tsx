@@ -9,7 +9,9 @@ import { WorksElements } from '../molecules/AbsoluteElements/WorksElements.tsx';
 
 export const Works: React.FC = () => {
   return (
-    <div className={`px-4 md:px-6 lg:px-8 xl:px-[171px] mt-[53px]`}>
+    <div
+      className={`px-4 md:px-6 lg:px-8 xl:px-[171px] mt-[34px] sm:mt-[53px]`}
+    >
       <WorksElements />
       <Sidebar />
       <Title
@@ -22,7 +24,11 @@ export const Works: React.FC = () => {
           text="complete-apps"
           linePresent={false}
         />
-        <div className="flex gap-4 mb-[81px]">
+        <div
+          className={`flex flex-col md:grid grid-cols-2 xl:grid-cols-[auto_auto_auto]
+          2xl:flex 2xl:flex-row gap-4 mb-[81px]
+        `}
+        >
           {projects.map((project) => (
             <ProjectCard
               key={project.title}
@@ -32,12 +38,16 @@ export const Works: React.FC = () => {
         </div>
       </div>
 
-      <div className={`mb-[187px]`}>
+      <div className={`mb-[100px] lg:mb-[187px]`}>
         <Heading
           text="Responsive Layout Projects"
           linePresent={false}
         />
-        <div className="flex gap-4 flex-wrap">
+        <div
+          className={`flex md:grid grid-cols-2 lg:grid-cols-[auto_auto_auto] 2xl:flex
+          gap-4 flex-wrap
+        `}
+        >
           {landings.map((landing) => (
             <SmallProjectCard
               key={landing.title}

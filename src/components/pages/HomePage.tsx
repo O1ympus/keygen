@@ -11,7 +11,7 @@ import { HomeElements } from '../molecules/AbsoluteElements/HomeElements.tsx';
 export const HomePage = () => {
   return (
     <div
-      className={`px-4 md:px-6 lg:px-8 xl:px-[171px] lg:mt-[62px] max-w-[1920px]
+      className={`px-4 md:px-6 lg:px-8 xl:px-[171px] mt-[34px] sm:mt-[53px] max-w-[1920px]
       mx-auto
     `}
     >

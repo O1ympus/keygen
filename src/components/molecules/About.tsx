@@ -11,12 +11,12 @@ type AboutProps = {
 
 export const About: React.FC<AboutProps> = ({ isButtonPresent }) => {
   return (
-    <div className={`flex justify-between gap-[170px] items-center`}>
-      <div className="max-w-[516px]">
+    <div className={`flex justify-between gap-[90px] items-center`}>
+      <div className="lg:max-w-[516px]">
         <div
           className={`text-custom-gray flex flex-col gap-4
-                mb-[27px]
-            `}
+             mb-[27px]
+          `}
         >
           {about.map(([text, whiteWords], idx) => (
             <p key={idx}>
@@ -44,7 +44,7 @@ export const About: React.FC<AboutProps> = ({ isButtonPresent }) => {
       <div
         className={`relative after:content-[''] after:h-[1px]
                 after:w-[80%] after:bg-primary after:absolute
-                after:bottom-0 after:left-[13%]
+                after:bottom-0 after:left-[13%] hidden lg:block
             `}
       >
         <img

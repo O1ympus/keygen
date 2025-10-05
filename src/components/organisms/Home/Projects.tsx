@@ -19,7 +19,7 @@ export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
         <Heading
           text="projects"
           linePresent={true}
-          className={`!mb-0 min-w-[700px]`}
+          className={`!mb-0 md:w-[700px]`}
         />
         <NavLink
           to="works"
@@ -31,7 +31,11 @@ export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           {`View all ~~>`}
         </NavLink>
       </div>
-      <div className="flex gap-4 flex-wrap">
+      <div
+        className={`flex flex-col md:grid grid-cols-2 xl:grid-cols-[auto_auto_auto] 2xl:flex
+         2xl:flex-row gap-4 mb-[81px]
+        `}
+      >
         {projects.map((project) => (
           <ProjectCard
             key={project.title}

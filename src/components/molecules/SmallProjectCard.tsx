@@ -12,7 +12,7 @@ export const SmallProjectCard: React.FC<SmallProjectCardProps> = ({
   return (
     <div
       key={landing.title}
-      className={`border border-1 border-custom-gray w-[330px] h-fit`}
+      className={`border border-1 border-custom-gray w-full 2xl:w-[330px] h-fit`}
     >
       <h3
         className={`p-4 font-medium text-white text-2xl after:block

@@ -11,11 +11,13 @@ import { Dots } from '../molecules/Dots.tsx';
 
 export const AboutMe: React.FC = () => {
   return (
-    <div className={`px-4 md:px-6 lg:px-8 xl:px-[171px] mt-[53px]`}>
+    <div
+      className={`px-4 md:px-6 lg:px-8 xl:px-[171px] mt-[34px] sm:mt-[53px]`}
+    >
       <AboutElements />
       <Sidebar />
 
-      <div className={`mb-[112px]`}>
+      <div className="mb-[80px] lg:mb-[112px]">
         <Title
           title="about-me"
           subtitle="Who am i?"
@@ -35,8 +37,10 @@ export const AboutMe: React.FC = () => {
         text="my-fun-facts"
         linePresent={false}
       />
-      <div className={`flex items-center justify-between mb-[162px]`}>
-        <div className={`flex gap-4 flex-wrap max-w-[60%]`}>
+      <div
+        className={`flex items-center justify-between mb-[100px] md:mb-[162px]`}
+      >
+        <div className={`flex gap-4 flex-wrap md:max-w-[60%]`}>
           {funFacts.map(([text, whiteWords]) => (
             <BorderedText
               key={text}
@@ -45,7 +49,7 @@ export const AboutMe: React.FC = () => {
             />
           ))}
         </div>
-        <div className={`relative w-[178px] h-[169px]`}>
+        <div className={`relative w-[178px] h-[169px] hidden md:block`}>
           <Dots className={`h-5 w-5 left-0 top-0`} />
           <img
             src="../../../public/img/logo/logo-dark.svg"

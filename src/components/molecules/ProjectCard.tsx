@@ -4,13 +4,19 @@ import type { Project } from '../../types/Project.ts';
 
 type ProjectCardProps = {
   project: Project;
+  className?: string;
 };
 
-export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({
+  project,
+  className,
+}) => {
   return (
     <div
       key={project.title}
-      className={`w-full sm:w-[calc(50%-8px)] xl:w-[330px] border border-1 border-custom-gray group cursor-pointer h-fit`}
+      className={`w-full md:w-auto 2xl:w-[330px] border border-1 
+        border-custom-gray group cursor-pointer h-fit ${className}
+        `}
     >
       <div className={`relative bg-black`}>
         <img

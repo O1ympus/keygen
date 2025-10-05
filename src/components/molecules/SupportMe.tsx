@@ -21,7 +21,7 @@ export const SupportMe = () => {
           });
         }}
       >
-        mono: 4441114463260628
+        4441114463260628
       </button>
     </div>
   );

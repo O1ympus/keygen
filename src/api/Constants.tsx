@@ -50,12 +50,13 @@ export const projects = [
     github: 'https://github.com/O1ympus/nice-gadgets-frontend',
   },
   {
-    title: 'Portfolio',
-    subtitle: 'Personal website showcasing projects and skills',
-    technologies: ['React', 'TypeScript', 'i18next'],
-    fileName: 'projects/portfolio',
-    demo: '',
-    github: 'https://github.com/O1ympus/keygen',
+    title: 'React Todo App',
+    subtitle:
+      'A React Todo app with filtering, localStorage, and inline editing.',
+    technologies: ['React', 'TypeScript', 'SCSS', 'Vite', 'Context API'],
+    fileName: 'projects/react-todo-app',
+    demo: 'https://o1ympus.github.io/react_todo-app/',
+    github: 'https://github.com/O1ympus/react_todo-app',
   },
   {
     title: 'Game 2048',
@@ -64,6 +65,14 @@ export const projects = [
     fileName: 'projects/2048',
     demo: 'https://o1ympus.github.io/js_2048_game/',
     github: 'https://github.com/O1ympus/js_2048_game',
+  },
+  {
+    title: 'Portfolio',
+    subtitle: 'Personal website showcasing projects and skills',
+    technologies: ['React', 'TypeScript', 'i18next'],
+    fileName: 'projects/portfolio',
+    demo: '',
+    github: 'https://github.com/O1ympus/keygen',
   },
 ];
 

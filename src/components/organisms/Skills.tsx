@@ -24,7 +24,7 @@ export const Skills: React.FC = () => {
           <Square className={`h-[86px] w-[86px] right-9 top-0`} />
           <Square className={`h-[52px] w-[52px] right-0 bottom-[37px]`} />
           <img
-            src="../../../public/img/logo/logo-dark.svg"
+            src="/img/logo/logo-dark.svg"
             alt="elias"
             className={`w-[113px] h-[113px] absolute left-[15px]
                         bottom-0

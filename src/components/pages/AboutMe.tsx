@@ -52,7 +52,7 @@ export const AboutMe: React.FC = () => {
         <div className={`relative w-[178px] h-[169px] hidden md:block`}>
           <Dots className={`h-5 w-5 left-0 top-0`} />
           <img
-            src="../../../public/img/logo/logo-dark.svg"
+            src="/img/logo/logo-dark.svg"
             alt="elias"
             className={`w-[113px] h-[113px] absolute bottom-0 right-0`}
           />

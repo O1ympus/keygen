@@ -8,7 +8,7 @@ export const Logo = () => {
       className="flex gap-2 items-center h-full z-30"
     >
       <img
-        src="../../../public/img/logo/logo-light.svg"
+        src="/img/logo/logo-light.svg"
         alt="elias"
         className="w-4 h-4 object-contain"
       />

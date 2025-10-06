@@ -1,17 +1,17 @@
-import IconGithub from './../../public/img/icons/Github.svg?react';
-import IconBitcoin from './../../public/img/icons/Bitcoin.svg?react';
-import IconCalendar from './../../public/img/icons/Calendar.svg?react';
-import IconCard from './../../public/img/icons/Card.svg?react';
-import IconDiscord from './../../public/img/icons/Discord.svg?react';
-import IconDribble from './../../public/img/icons/Dribble.svg?react';
-import IconEmail from './../../public/img/icons/Email.svg?react';
-import IconFigma from './../../public/img/icons/Figma.svg?react';
-import IconLandmark from './../../public/img/icons/Landmark.svg?react';
-import IconLinkedin from './../../public/img/icons/Linkedin.svg?react';
-import IconPlay from './../../public/img/icons/Play.svg?react';
-import IconQuotes from './../../public/img/icons/quotes.svg?react';
-import IconTelegram from './../../public/img/icons/Telegram.svg?react';
-import IconTwitter from './../../public/img/icons/Twitter.svg?react';
+import IconGithub from '../assets/icons/Github.svg?react';
+import IconBitcoin from '../assets/icons/Bitcoin.svg?react';
+import IconCalendar from '../assets/icons/Calendar.svg?react';
+import IconCard from '../assets/icons/Card.svg?react';
+import IconDiscord from '../assets/icons/Discord.svg?react';
+import IconDribble from '../assets/icons/Dribble.svg?react';
+import IconEmail from '../assets/icons/Email.svg?react';
+import IconFigma from '../assets/icons/Figma.svg?react';
+import IconLandmark from '../assets/icons/Landmark.svg?react';
+import IconLinkedin from '../assets/icons/Linkedin.svg?react';
+import IconPlay from '../assets/icons/Play.svg?react';
+import IconQuotes from '../assets/icons/quotes.svg?react';
+import IconTelegram from '../assets/icons/Telegram.svg?react';
+import IconTwitter from '../assets/icons/Twitter.svg?react';
 
 export const iconsMap = {
   calendar: IconCalendar,

@@ -20,7 +20,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     >
       <div className={`relative bg-black`}>
         <img
-          src={`../../../../public/img/${project.fileName}.png`}
+          src={`/img/${project.fileName}.png`}
           alt={project.fileName}
           className={`aspect-[1.65] object-cover opacity-70 group-hover:opacity-100 
             transition-all duration-300 ease-in-out

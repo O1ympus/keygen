@@ -9,7 +9,7 @@ export const Proverb = () => {
           With great power comes great electricity bill
         </p>
         <img
-          src="../../../public/img/icons/quotes.svg"
+          src="/img/icons/quotes.svg"
           alt="quotes"
           className={`w-[25.5px] h-[20.7px] py-1 px-2 absolute
                   box-content -top-3 left-[11px] bg-background`}
@@ -20,7 +20,7 @@ export const Proverb = () => {
           - Dr. Who
         </p>
         <img
-          src="../../../public/img/icons/quotes.svg"
+          src="/img/icons/quotes.svg"
           alt="quotes"
           className={`w-[25.5px] h-[20.7px] py-1 px-2 absolute
                   box-content -top-3 right-[15.5px] bg-background`}

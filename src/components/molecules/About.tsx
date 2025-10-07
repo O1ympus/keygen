@@ -4,12 +4,15 @@ import { NavLink } from 'react-router-dom';
 import * as React from 'react';
 import { about } from '../../api/Constants.tsx';
 import cn from 'classnames';
+import { useTranslation } from 'react-i18next';
 
 type AboutProps = {
   isButtonPresent: boolean;
 };
 
 export const About: React.FC<AboutProps> = ({ isButtonPresent }) => {
+  const { t } = useTranslation();
+
   return (
     <div className={`flex justify-between gap-[90px] items-center`}>
       <div className="lg:max-w-[516px]">
@@ -18,19 +21,23 @@ export const About: React.FC<AboutProps> = ({ isButtonPresent }) => {
              mb-[27px]
           `}
         >
-          {about.map(([text, whiteWords], idx) => (
+          {about.map(([key, whiteWords], idx) => (
             <p key={idx}>
-              {text.split(/([\s,']+)/).map((part, i) => {
-                const clean = part.replace(/^[.,']+|[.,']+$/g, '');
-                return (
-                  <span
-                    key={i}
-                    className={cn({ 'text-white': whiteWords.includes(clean) })}
-                  >
-                    {part}
-                  </span>
-                );
-              })}
+              {t(key)
+                .split(/([\s,']+)/)
+                .map((part, i) => {
+                  const clean = part.replace(/^[.,']+|[.,']+$/g, '');
+                  return (
+                    <span
+                      key={i}
+                      className={cn({
+                        'text-white': whiteWords.includes(clean),
+                      })}
+                    >
+                      {part}
+                    </span>
+                  );
+                })}
               .
             </p>
           ))}

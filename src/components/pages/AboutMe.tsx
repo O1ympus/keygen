@@ -20,7 +20,7 @@ export const AboutMe: React.FC = () => {
       <div className="mb-[80px] lg:mb-[112px]">
         <Title
           title="about-me"
-          subtitle="Who am i?"
+          subtitle="who-am-i"
         />
         <About isButtonPresent={false} />
       </div>

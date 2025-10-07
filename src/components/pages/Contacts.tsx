@@ -8,8 +8,11 @@ import { Icon } from '../atoms/Icon.tsx';
 import copy from 'copy-to-clipboard';
 import { toast } from 'react-toastify';
 import { ContactsElements } from '../molecules/AbsoluteElements/ContactsElements.tsx';
+import { useTranslation } from 'react-i18next';
 
 export const Contacts: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div
       className={`px-4 md:px-6 lg:px-8 xl:px-[171px] mt-[34px] sm:mt-[53px]`}
@@ -17,8 +20,8 @@ export const Contacts: React.FC = () => {
       <ContactsElements />
       <Sidebar />
       <Title
-        title="contacts"
-        subtitle="Who am i?"
+        title="header-contacts"
+        subtitle="who-am-i"
         className={`mb-[20px] md:mb-[46px]`}
       />
 
@@ -28,8 +31,7 @@ export const Contacts: React.FC = () => {
         `}
       >
         <p className="text-custom-gray font-medium md:max-w-[400px]">
-          I’m currently seeking a Full-Stack Developer position. If you have any
-          requests or questions, feel free to contact me.
+          {t('i-am-seeking')}
         </p>
         <div
           className={`flex flex-col-reverse sm:flex-row-reverse md:flex-col-reverse

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { SkillsList } from './SkillsList.tsx';
+import { useTranslation } from 'react-i18next';
 
 type SkillTableProps = {
   skillHeading: string;
@@ -10,13 +11,15 @@ export const SkillTable: React.FC<SkillTableProps> = ({
   skillHeading,
   skillsArr,
 }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="w-[calc(50%-8px)] sm:w-auto border border-1 border-custom-gray max-w-[196px] h-fit">
       <span
         className={`font-semibold text-white border-b border-1
                border-custom-gray p-2 inline-block w-full`}
       >
-        {skillHeading}
+        {t(skillHeading)}
       </span>
       <SkillsList skillsArr={skillsArr} />
     </div>

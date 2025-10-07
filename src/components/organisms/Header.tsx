@@ -3,6 +3,7 @@ import * as React from 'react';
 import { Logo } from '../molecules/Logo.tsx';
 import { BurgerMenu } from '../molecules/BurgerMenu.tsx';
 import cn from 'classnames';
+import { LangButton } from '../atoms/buttons/LangButton.tsx';
 
 type HeaderProps = {
   linkNames: string[];
@@ -55,38 +56,7 @@ export const Header: React.FC<HeaderProps> = ({
               text={link !== 'home' ? link : '/'}
             />
           ))}
-          <button
-            className={`flex items-center gap-1 z-30 md:pr-6 lg:pr-8 xl:pr-0`}
-          >
-            <span
-              className={`font-semibold text-custom-gray text-2xl md:text-base`}
-            >
-              EN
-            </span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className={`w-[15px] h-[10.5px] md:w-[10px] md:h-[7px]`}
-              viewBox="0 0 10 7"
-              fill="none"
-            >
-              <line
-                x1="0.707107"
-                y1="1.29289"
-                x2="5.70711"
-                y2="6.29289"
-                stroke="#ABB2BF"
-                strokeWidth="2"
-              />
-              <line
-                x1="4.29289"
-                y1="6.29289"
-                x2="9.29289"
-                y2="1.29289"
-                stroke="#ABB2BF"
-                strokeWidth="2"
-              />
-            </svg>
-          </button>
+          <LangButton handleIsBurgerMenuActive={handleIsBurgerMenuActive} />
         </ul>
       </nav>
       <button

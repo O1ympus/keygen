@@ -21,9 +21,13 @@ export const LangButton: React.FC<LangButtonProps> = ({
         toggleLanguage();
         handleIsBurgerMenuActive(false);
       }}
-      className="flex items-center gap-1 z-30 md:pr-6 lg:pr-8 xl:pr-0"
+      className="flex items-center gap-1 z-30 md:pr-6 lg:pr-8 xl:pr-0 group"
     >
-      <span className="font-semibold text-custom-gray text-2xl md:text-base">
+      <span
+        className={`text-custom-gray group-hover:text-white group-active:text-white
+        transition-all duration-300 ease-in-out text-2xl md:text-base
+      `}
+      >
         {i18n.language === 'ua' ? 'UA' : 'EN'}
       </span>
     </button>

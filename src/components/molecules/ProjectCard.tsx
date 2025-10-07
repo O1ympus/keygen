@@ -18,15 +18,16 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     <div
       key={project.title}
       className={`w-full md:w-auto 2xl:w-[330px] border border-1 
-        border-custom-gray group cursor-pointer h-fit ${className}
+        border-custom-gray group h-fit ${className}
         `}
     >
-      <div className={`relative bg-black`}>
+      <div className={`relative bg-black overflow-hidden`}>
         <img
           src={`/img/${project.fileName}.png`}
           alt={project.fileName}
-          className={`aspect-[1.65] object-cover opacity-70 group-hover:opacity-100 
-            transition-all duration-300 ease-in-out
+          className={`aspect-[1.65] object-cover opacity-80 group-hover:opacity-100 
+            transition-all duration-300 ease-in-out scale-100 group-hover:scale-105 
+            cursor-pointer
           `}
         />
       </div>

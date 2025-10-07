@@ -10,21 +10,24 @@ export const BorderedText: React.FC<BorderedTextProps> = ({
   text,
   whiteWords,
 }) => {
-  const parts = text.split(/(\s+)/);
   const { t } = useTranslation();
+  const parts = text.split(/(\s+)/);
 
   return (
     <div className="border border-1 border-custom-gray p-2 text-custom-gray">
-      {parts.map((part, i) =>
-        whiteWords.includes(part) ?
+      {parts.map((part, i) => {
+        const cleanWord = part.replace(/[.,!?;:]+$/g, '');
+        const isWhite = whiteWords.includes(cleanWord);
+
+        return (
           <span
             key={i}
-            className="text-white break-words"
+            className={isWhite ? 'text-white break-words' : undefined}
           >
             {t(part)}
           </span>
-        : <span key={i}>{t(part)}</span>,
-      )}
+        );
+      })}
     </div>
   );
 };

@@ -12,7 +12,7 @@ export const Icon: React.FC<IconProps> = ({ name, className }) => {
   return (
     <SvgIcon
       className={`transition-all duration-300 ease-in-out text-custom-gray group-hover:text-white
-        h-8 w-8 ${className}`}
+        h-8 w-8 ${className} relative block`}
     />
   );
 };

@@ -40,6 +40,7 @@ export const Footer = () => {
               <a
                 href="https://t.me/keygen_exe"
                 target="_blank"
+                className={`hover:-translate-y-[3px] transition-all ease-in-out duration-300`}
               >
                 <Icon
                   name="telegram"
@@ -52,12 +53,14 @@ export const Footer = () => {
               >
                 <Icon
                   name="linkedin"
-                  className={`hover:text-white`}
+                  className={`hover:text-white hover:-translate-y-[3px]
+                  transition-all ease-in-out duration-300`}
                 />
               </a>
               <a
                 href="https://github.com/O1ympus"
                 target="_blank"
+                className={`hover:-translate-y-[3px] transition-all ease-in-out duration-300`}
               >
                 <Icon
                   name="github"

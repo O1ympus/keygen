@@ -15,7 +15,7 @@ export const NavigationLink: React.FC<NavigationLinkProps> = ({
   const { t } = useTranslation();
 
   return (
-    <li className={`z-30`}>
+    <li>
       <NavLink
         to={text}
         onClick={() => {
@@ -25,7 +25,7 @@ export const NavigationLink: React.FC<NavigationLinkProps> = ({
       >
         {({ isActive }) => (
           <div>
-            <span className="text-primary text-2xl md:text-base">#</span>
+            <span className={`text-primary text-2xl md:text-base`}>#</span>
             <span
               className={cn(
                 {

@@ -8,8 +8,11 @@ import { funFacts } from '../../api/Constants.tsx';
 import { BorderedText } from '../atoms/BorderedText.tsx';
 import { AboutElements } from '../molecules/AbsoluteElements/AboutElements.tsx';
 import { Dots } from '../molecules/Dots.tsx';
+import { useTranslation } from 'react-i18next';
 
 export const AboutMe: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div
       className={`px-4 md:px-6 lg:px-8 xl:px-[171px] mt-[34px] sm:mt-[53px]`}
@@ -41,10 +44,10 @@ export const AboutMe: React.FC = () => {
         className={`flex items-center justify-between mb-[100px] md:mb-[162px]`}
       >
         <div className={`flex gap-4 flex-wrap md:max-w-[60%]`}>
-          {funFacts.map(([text, whiteWords]) => (
+          {funFacts.map(([key, whiteWords]) => (
             <BorderedText
-              key={text}
-              text={text}
+              key={key}
+              text={t(key)}
               whiteWords={whiteWords}
             />
           ))}

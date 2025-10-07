@@ -125,10 +125,23 @@ export const landings = [
 ];
 
 export const funFacts: [string, string[]][] = [
-  ['fact-egypt-poland-turkey', ['Egypt', 'Poland', 'Turkey']],
-  ['fact-pizza-pasta', ['pizza', 'pasta']],
-  ['fact-autumn', ['autumn', 'summer']],
-  ['fact-evening-walks', ['evening', 'walks']],
-  ['fact-favorite-movie', ['"Demolition"', 'Jake', 'Gyllenhaal']],
-  ['fact-no-siblings', ['siblings']],
+  [
+    'fact-egypt-poland-turkey',
+    ['Egypt', 'Poland', 'Turkey', 'Єгипті', 'Польщі', 'Туреччині'],
+  ],
+  ['fact-pizza-pasta', ['pizza', 'pasta', 'піца', 'паста']],
+  ['fact-autumn', ['autumn', 'summer', 'осінь', 'літо']],
+  ['fact-evening-walks', ['evening', 'walks', 'вечірні', 'прогулянки']],
+  [
+    'fact-favorite-movie',
+    [
+      '"Demolition"',
+      'Jake',
+      'Gyllenhaal',
+      'Джейком',
+      'Джилленголом',
+      '«Руйнація»',
+    ],
+  ],
+  ['fact-no-siblings', ['siblings', 'братів', 'сестер']],
 ];

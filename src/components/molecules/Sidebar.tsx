@@ -7,6 +7,7 @@ export const Sidebar = () => {
       <a
         href="https://t.me/keygen_exe"
         target="_blank"
+        className={`hover:-translate-y-[3px] transition-all ease-in-out duration-300`}
       >
         <Icon
           name="telegram"
@@ -16,6 +17,7 @@ export const Sidebar = () => {
       <a
         href="https://www.linkedin.com/in/vladyslav-matkovskyi-477474332/"
         target="_blank"
+        className={`hover:-translate-y-[3px] transition-all ease-in-out duration-300`}
       >
         <Icon
           name="linkedin"
@@ -25,6 +27,7 @@ export const Sidebar = () => {
       <a
         href="https://github.com/O1ympus"
         target="_blank"
+        className={`hover:-translate-y-[3px] transition-all ease-in-out duration-300`}
       >
         <Icon
           name="github"

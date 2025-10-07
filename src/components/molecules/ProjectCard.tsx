@@ -1,6 +1,7 @@
 import { LiveButton } from '../atoms/buttons/LiveButton.tsx';
 import * as React from 'react';
 import type { Project } from '../../types/Project.ts';
+import { useTranslation } from 'react-i18next';
 
 type ProjectCardProps = {
   project: Project;
@@ -11,6 +12,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   project,
   className,
 }) => {
+  const { t } = useTranslation();
+
   return (
     <div
       key={project.title}
@@ -31,29 +34,29 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         className={`flex flex-wrap gap-2 border-t border-b border-1 
                       border-custom-gray p-2`}
       >
-        {project.technologies.map((t) => (
-          <li key={t}>
-            <span className="text-custom-gray">{t}</span>
+        {project.technologies.map((tech) => (
+          <li key={tech}>
+            <span className="text-custom-gray">{t(tech)}</span>
           </li>
         ))}
       </ul>
       <div className="p-4">
         <h3 className={`mb-4 font-medium text-white text-2xl`}>
-          {project.title}
+          {t(project.title)}
         </h3>
-        <p className="mb-4 text-custom-gray">{project.subtitle}</p>
+        <p className="mb-4 text-custom-gray">{t(project.subtitle)}</p>
         <div className={`flex gap-4`}>
           <a
             href={project.demo}
             target="_blank"
           >
-            <LiveButton text="Demo <~>" />
+            <LiveButton text="demo" />
           </a>
           <a
             href={project.github}
             target="_blank"
           >
-            <LiveButton text="Github >=" />
+            <LiveButton text="github" />
           </a>
         </div>
       </div>

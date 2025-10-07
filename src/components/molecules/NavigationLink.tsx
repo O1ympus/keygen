@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { NavLink } from 'react-router-dom';
 import cn from 'classnames';
+import { useTranslation } from 'react-i18next';
 
 type NavigationLinkProps = {
   text: string;
@@ -11,6 +12,8 @@ export const NavigationLink: React.FC<NavigationLinkProps> = ({
   text,
   handleIsBurgerMenuActive,
 }) => {
+  const { t } = useTranslation();
+
   return (
     <li className={`z-30`}>
       <NavLink
@@ -33,7 +36,7 @@ export const NavigationLink: React.FC<NavigationLinkProps> = ({
                 `,
               )}
             >
-              {text !== '/' ? text : 'home'}
+              {text !== '/' ? t(`header-${text}`) : t('header-home')}
             </span>
           </div>
         )}

@@ -4,8 +4,7 @@ import { Header } from './components/organisms/Header.tsx';
 import { Footer } from './components/organisms/Footer.tsx';
 import { useBurgerMenu } from './hooks/useBurgerMenu.ts';
 import cn from 'classnames';
-
-const linkNames = ['home', 'works', 'about-me', 'contacts'];
+import { linkNames } from './api/Constants.tsx';
 
 function App() {
   const { isBurgerMenuActive, setIsBurgerMenuActive } = useBurgerMenu();

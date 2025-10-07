@@ -16,7 +16,7 @@ export const Works: React.FC = () => {
       <Sidebar />
       <Title
         title="projects"
-        subtitle="List of my projects"
+        subtitle="projects-page"
       />
 
       <div>
@@ -40,7 +40,7 @@ export const Works: React.FC = () => {
 
       <div className={`mb-[100px] lg:mb-[187px]`}>
         <Heading
-          text="Responsive Layout Projects"
+          text="responsive-layout-projects"
           linePresent={false}
         />
         <div

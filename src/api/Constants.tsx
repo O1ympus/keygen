@@ -1,31 +1,35 @@
+export const linkNames = ['home', 'works', 'about-me', 'contacts'];
+
 export const about: [string, string[]][] = [
   [
-    'Full-stack developer with a Bachelor’s degree in Software Engineering. Skilled in JavaScript, TypeScript, React, and with working knowledge of Node.js',
+    'about-me-text-1',
     [
       'Full-stack',
       'developer',
+      'розробник',
       'Bachelor’s',
       'degree',
+      'дипломом',
+      'бакалавра',
       'Software',
       'Engineering',
+      'програмної',
+      'інженерії',
       'JavaScript',
       'TypeScript',
       'React',
       'Node.js',
     ],
   ],
+  ['about-me-text-2', []],
   [
-    'Experienced in building user-friendly and visually polished applications, with strong attention to detail and quality. Able to manage multiple tasks simultaneously and deliver results under pressure',
-    [],
-  ],
-  [
-    'Proficient in English at B2 level, with the ability to communicate effectively in international teams. Motivated to contribute technical expertise and creative solutions to innovative projects',
-    ['English', 'at', 'B2', 'level'],
+    'about-me-text-3',
+    ['English', 'at', 'B2', 'англійською', 'на', 'level', 'рівні'],
   ],
 ];
 
 export const skills = {
-  Frontend: [
+  frontend: [
     'JavaScript',
     'TypeScript',
     'React',
@@ -34,41 +38,40 @@ export const skills = {
     'Sass',
     'Tailwind',
   ],
-  Tooling: ['Git', 'Vite', 'Docker', 'ESLint', 'Prettier', 'CI/CD'],
-  Backend: ['Node.js', 'SQL', 'MySQL', 'MongoDB'],
-  Methodologies: ['Agile', 'Scrum', 'Kanban', 'SDLC'],
-  Testing: ['Jest', 'Cypress'],
+  tooling: ['Git', 'Vite', 'Docker', 'ESLint', 'Prettier', 'CI/CD'],
+  backend: ['Node.js', 'SQL', 'MySQL', 'MongoDB'],
+  methodologies: ['Agile', 'Scrum', 'Kanban', 'SDLC'],
+  testing: ['Jest', 'Cypress'],
 };
 
 export const projects = [
   {
-    title: 'Nice Gadgets',
-    subtitle: 'E-commerce platform for browsing and purchasing gadgets.',
+    title: 'nice-gadgets',
+    subtitle: 'nice-gadgets-desc',
     technologies: ['React', 'TypeScript', 'Supabase', 'i18next'],
     fileName: 'projects/nice-gadgets',
     demo: 'https://develop-nice-gadgets-frontend.vercel.app/#/',
     github: 'https://github.com/O1ympus/nice-gadgets-frontend',
   },
   {
-    title: 'React Todo App',
-    subtitle:
-      'A React Todo app with filtering, localStorage, and inline editing.',
+    title: 'react-todo-app',
+    subtitle: 'react-todo-app-desc',
     technologies: ['React', 'TypeScript', 'SCSS', 'Vite', 'Context API'],
     fileName: 'projects/react-todo-app',
     demo: 'https://o1ympus.github.io/react_todo-app/',
     github: 'https://github.com/O1ympus/react_todo-app',
   },
   {
-    title: 'Game 2048',
-    subtitle: 'Classic puzzle game 2048 implemented for browser.',
+    title: 'game-2048',
+    subtitle: 'game-2048-desc',
     technologies: ['JavaScript', 'HTML5', 'CSS3'],
     fileName: 'projects/2048',
     demo: 'https://o1ympus.github.io/js_2048_game/',
     github: 'https://github.com/O1ympus/js_2048_game',
   },
   {
-    title: 'Portfolio',
-    subtitle: 'Personal website showcasing projects and skills',
+    title: 'portfolio-project',
+    subtitle: 'portfolio-project-desc',
     technologies: ['React', 'TypeScript', 'i18next'],
     fileName: 'projects/portfolio',
     demo: '',
@@ -79,62 +82,53 @@ export const projects = [
 export const landings = [
   {
     title: 'BIKE',
-    subtitle: 'Landing page for promoting and showcasing e-bike products.',
+    subtitle: 'bike-desc',
     demo: 'https://o1ympusbike.netlify.app',
     github: 'https://github.com/O1ympus/layout_landing-page',
   },
   {
     title: 'Museum',
-    subtitle:
-      'Landing page for an art museum with event schedule, ticketing, gallery, and contact information.',
+    subtitle: 'museum-desc',
     demo: 'https://o1ympus.github.io/Museum/',
     github: 'https://github.com/O1ympus/Museum',
   },
   {
     title: 'Museum 2',
-    subtitle:
-      'Landing page for an art museum with exhibitions, event, calendar, ticket booking, and news updates.',
+    subtitle: 'museum-2-desc',
     demo: 'https://o1ympus.github.io/Museum_2/',
     github: 'https://github.com/O1ympus/Museum_2',
   },
   {
     title: 'Creative bakery',
-    subtitle:
-      'Landing page for a bakery brand with product catalog, company info, and contact details.',
+    subtitle: 'creative-bakery-desc',
     demo: 'https://o1ympus.github.io/layout_creativeBakery/src/index.html',
     github: 'https://github.com/O1ympus/layout_creativeBakery',
   },
   {
     title: 'KatVR',
-    subtitle:
-      'Landing page for a VR locomotion product, highlighting, features, use cases, technical specs, and purchase options.',
+    subtitle: 'katvr-desc',
     demo: 'https://o1ympus.github.io/layout_KateVR/src/index.html',
     github: 'https://github.com/O1ympus/layout_KateVR',
   },
   {
     title: 'Kickstarter',
-    subtitle:
-      'Product landing page for a futuristic wireless speaker, showcasing story, features, design, and connectivity options.',
+    subtitle: 'kickstarter-desc',
     demo: 'https://o1ympus.github.io/Kickstarter/',
     github: 'https://github.com/O1ympus/Kickstarter',
   },
   {
     title: 'Dia',
-    subtitle:
-      'Landing page for a creative agency showcasing services, expertise, and client testimonials.',
+    subtitle: 'dia-desc',
     demo: 'https://o1ympus.github.io/layout_dia/src/index.html',
     github: 'https://github.com/O1ympus/layout_dia',
   },
 ];
 
 export const funFacts: [string, string[]][] = [
-  ['I was in Egypt, Poland and Turkey', ['Egypt', 'Poland', 'Turkey']],
-  ['I like pizza and pasta', ['pizza', 'pasta']],
-  ['I like autumn more than summer', ['autumn', 'summer']],
-  ['I really enjoy evening walks', ['evening', 'walks']],
-  [
-    'My favorite movie is "Demolition" with Jake Gyllenhaal',
-    ['"Demolition"', 'Jake', 'Gyllenhaal'],
-  ],
-  ['I don’t have any siblings', ['siblings']],
+  ['fact-egypt-poland-turkey', ['Egypt', 'Poland', 'Turkey']],
+  ['fact-pizza-pasta', ['pizza', 'pasta']],
+  ['fact-autumn', ['autumn', 'summer']],
+  ['fact-evening-walks', ['evening', 'walks']],
+  ['fact-favorite-movie', ['"Demolition"', 'Jake', 'Gyllenhaal']],
+  ['fact-no-siblings', ['siblings']],
 ];

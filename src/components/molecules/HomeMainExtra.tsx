@@ -9,7 +9,7 @@ export const HomeMainExtra = () => {
         alt="anonym"
         className="max-w-full h-auto md:w-[469px] z-10 object-contain"
       />
-      <CurrentlyWorkingOn text="Portfolio" />
+      <CurrentlyWorkingOn text="portfolio" />
       <img
         src="/img/logo/logo-dark.svg"
         alt="elias"

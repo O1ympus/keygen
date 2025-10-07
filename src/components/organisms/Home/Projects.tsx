@@ -3,12 +3,15 @@ import * as React from 'react';
 import type { Project } from '../../../types/Project.ts';
 import { ProjectCard } from '../../molecules/ProjectCard.tsx';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 type ProjectsProps = {
   projects: Project[];
 };
 
 export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="mb-[70px] md:mb-[106px]">
       <div
@@ -28,7 +31,7 @@ export const Projects: React.FC<ProjectsProps> = ({ projects }) => {
             ease-in-out hover:text-white ml-auto mr-0 w-fit
           `}
         >
-          {`View all ~~>`}
+          {t('view-all')}
         </NavLink>
       </div>
       <div

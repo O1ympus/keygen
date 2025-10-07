@@ -1,6 +1,7 @@
 import { LiveButton } from '../atoms/buttons/LiveButton.tsx';
 import * as React from 'react';
 import type { Project } from '../../types/Project.ts';
+import { useTranslation } from 'react-i18next';
 
 type SmallProjectCardProps = {
   landing: Partial<Project>;
@@ -9,6 +10,8 @@ type SmallProjectCardProps = {
 export const SmallProjectCard: React.FC<SmallProjectCardProps> = ({
   landing,
 }) => {
+  const { t } = useTranslation();
+
   return (
     <div
       key={landing.title}
@@ -20,22 +23,22 @@ export const SmallProjectCard: React.FC<SmallProjectCardProps> = ({
         box-content after:-ml-4
       `}
       >
-        {landing.title}
+        {t(landing.title ?? '')}
       </h3>
       <div className={`px-4 pb-4`}>
-        <p className="mb-4 text-custom-gray">{landing.subtitle}</p>
+        <p className="mb-4 text-custom-gray">{t(landing.subtitle ?? '')}</p>
         <div className={`flex gap-4`}>
           <a
             href={landing.demo}
             target="_blank"
           >
-            <LiveButton text="Demo <~>" />
+            <LiveButton text="demo" />
           </a>
           <a
             href={landing.github}
             target="_blank"
           >
-            <LiveButton text="Github >=" />
+            <LiveButton text="github" />
           </a>
         </div>
       </div>

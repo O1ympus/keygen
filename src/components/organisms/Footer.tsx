@@ -1,5 +1,6 @@
 import { Logo } from '../molecules/Logo.tsx';
 import { Icon } from '../atoms/Icon.tsx';
+import { useTranslation } from 'react-i18next';
 
 export const Footer = () => {
   const handleScroll = () => {
@@ -8,6 +9,8 @@ export const Footer = () => {
       behavior: 'smooth',
     });
   };
+
+  const { t } = useTranslation();
 
   return (
     <footer
@@ -22,7 +25,7 @@ export const Footer = () => {
       >
         <div>
           <Logo />
-          <p className="text-white mt-4">Full stack developer</p>
+          <p className="text-white mt-4">{t('full-stack-developer')}</p>
         </div>
         <div
           className={`flex items-center justify-between w-full md:w-auto gap-10
@@ -30,7 +33,9 @@ export const Footer = () => {
         `}
         >
           <div>
-            <h3 className={`font-medium text-white text-2xl mb-3`}>Media</h3>
+            <h3 className={`font-medium text-white text-2xl mb-3`}>
+              {t('media')}
+            </h3>
             <div className="flex gap-2 items-center">
               <a
                 href="https://t.me/keygen_exe"
@@ -88,9 +93,7 @@ export const Footer = () => {
           </button>
         </div>
       </div>
-      <p className="text-custom-gray text-center">
-        © Copyright 2025. Made by Keygen
-      </p>
+      <p className="text-custom-gray text-center">{t('copyright')}</p>
     </footer>
   );
 };

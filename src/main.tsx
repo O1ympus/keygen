@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
+import './libs/i18n';
 import { Root } from './components/Root/Root.tsx';
 import { ToastContainer } from 'react-toastify';
 

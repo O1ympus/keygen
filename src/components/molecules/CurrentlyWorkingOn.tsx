@@ -1,5 +1,6 @@
 import { ColoredSquare } from '../atoms/buttons/ColoredSquare.tsx';
 import * as React from 'react';
+import { useTranslation } from 'react-i18next';
 
 type CurrentlyWorkingOnProps = {
   text: string;
@@ -8,6 +9,8 @@ type CurrentlyWorkingOnProps = {
 export const CurrentlyWorkingOn: React.FC<CurrentlyWorkingOnProps> = ({
   text,
 }) => {
+  const { t } = useTranslation();
+
   return (
     <div
       className={`flex gap-[10px] px-2 py-[10.5px] items-center border
@@ -17,8 +20,10 @@ export const CurrentlyWorkingOn: React.FC<CurrentlyWorkingOnProps> = ({
     >
       <ColoredSquare />
       <p>
-        <span className="text-custom-gray mr-2">Currently working on</span>
-        <span className="text-white font-semibold">{text}</span>
+        <span className="text-custom-gray mr-2">
+          {t('currently-working-on')}
+        </span>
+        <span className="text-white font-semibold">{t(text)}</span>
       </p>
     </div>
   );

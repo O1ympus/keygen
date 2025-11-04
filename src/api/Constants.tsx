@@ -54,6 +54,14 @@ export const projects = [
     github: 'https://github.com/O1ympus/nice-gadgets-frontend',
   },
   {
+    title: 'dashboard-app',
+    subtitle: 'dashboard-app-desc',
+    technologies: ['Next.js', 'Node.js', 'Mongoose', 'Zustand'],
+    fileName: 'projects/dashboard-app',
+    demo: 'https://dashboard-app-ebon-pi.vercel.app/',
+    github: 'https://github.com/O1ympus/dashboard-app',
+  },
+  {
     title: 'react-todo-app',
     subtitle: 'react-todo-app-desc',
     technologies: ['React', 'TypeScript', 'SCSS', 'Vite', 'Context API'],

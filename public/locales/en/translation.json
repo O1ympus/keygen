@@ -23,6 +23,8 @@
   "view-all": "View all ~~>",
   "nice-gadgets": "Nice Gadgets",
   "nice-gadgets-desc": "E-commerce platform for browsing and purchasing gadgets.",
+  "dashboard-app": "Dashboard App",
+  "dashboard-app-desc": "Full-stack productivity dashboard for managing and tracking tasks in real time.",
   "demo": "Demo <~>",
   "github": "Github >=",
   "react-todo-app": "React Todo App",

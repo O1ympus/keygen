@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Reset margin + ensure body fills viewport */
+/* Reset margin + ensure body fills viewport. */
 html,
 body {
   margin: 0;

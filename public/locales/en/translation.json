@@ -25,6 +25,8 @@
   "nice-gadgets-desc": "E-commerce platform for browsing and purchasing gadgets.",
   "dashboard-app": "Dashboard App",
   "dashboard-app-desc": "Full-stack productivity dashboard for managing and tracking tasks in real time.",
+  "weather-app": "Weather App",
+  "weather-app-desc": "Weather application with user management, allowing saving users and viewing their current weather and location.",
   "demo": "Demo <~>",
   "github": "Github >=",
   "react-todo-app": "React Todo App",

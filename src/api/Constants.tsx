@@ -82,8 +82,16 @@ export const projects = [
     subtitle: 'portfolio-project-desc',
     technologies: ['React', 'TypeScript', 'i18next'],
     fileName: 'projects/portfolio',
-    demo: '',
+    demo: 'https://keygen-rho.vercel.app/#/',
     github: 'https://github.com/O1ympus/keygen',
+  },
+  {
+    title: 'weather-app',
+    subtitle: 'weather-app-desc',
+    technologies: ['Next.js', 'NestJS', 'Sequelize', 'Docker'],
+    fileName: 'projects/weather-app',
+    demo: '',
+    github: 'https://github.com/O1ympus/weather-app',
   },
 ];
 

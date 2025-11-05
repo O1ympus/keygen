@@ -17,7 +17,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div
       key={project.title}
-      className={`w-full md:w-auto 2xl:w-[330px] border border-1 
+      className={`w-full md:w-auto 2xl:w-[330px] border border-1
         border-custom-gray group h-fit ${className}
         `}
     >
@@ -25,14 +25,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <img
           src={`/img/${project.fileName}.png`}
           alt={project.fileName}
-          className={`aspect-[1.65] object-cover opacity-80 group-hover:opacity-100 
-            transition-all duration-300 ease-in-out scale-100 group-hover:scale-105 
+          className={`aspect-[1.65] object-cover opacity-80 group-hover:opacity-100
+            transition-all duration-300 ease-in-out scale-100 group-hover:scale-105
             cursor-pointer
           `}
         />
       </div>
       <ul
-        className={`flex flex-wrap gap-2 border-t border-b border-1 
+        className={`flex flex-wrap gap-2 border-t border-b border-1
                       border-custom-gray p-2`}
       >
         {project.technologies.map((tech) => (
@@ -48,10 +48,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <p className="mb-4 text-custom-gray">{t(project.subtitle)}</p>
         <div className={`flex gap-4`}>
           <a
-            href={project.demo}
+            href={project.demo || undefined}
             target="_blank"
           >
-            <LiveButton text="demo" />
+            <LiveButton
+              text="demo"
+              disabled={project.demo === ''}
+            />
           </a>
           <a
             href={project.github}

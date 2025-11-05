@@ -17,10 +17,9 @@ export const LiveButton: React.FC<LiveButtonProps> = ({ text, disabled }) => {
         {
           'bg-[#42474F] text-[#ABB2BF] border-[#ABB2BF] hover:bg-[#42474F]':
             disabled,
+          'text-white border-primary hover:bg-primary/30': !disabled,
         },
-        `border border-1 border-primary py-2 px-4 font-md text-white
-        hover:bg-primary/30 transition-all duration-300 ease-in-out
-        `,
+        `border border-1 py-2 px-4 font-md transition-all duration-300 ease-in-out`,
       )}
     >
       {t(text)}

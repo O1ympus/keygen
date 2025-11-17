@@ -54,6 +54,14 @@ export const projects = [
     github: 'https://github.com/O1ympus/nice-gadgets-frontend',
   },
   {
+    title: 'gdp-app',
+    subtitle: 'gdp-app-desc',
+    technologies: ['Svelte', 'Kysely', 'SQLite', 'Zod', 'shadcn'],
+    fileName: 'projects/gdp-app',
+    demo: 'https://gdp-svelte-production.up.railway.app/',
+    github: 'https://github.com/O1ympus/gdp-svelte',
+  },
+  {
     title: 'dashboard-app',
     subtitle: 'dashboard-app-desc',
     technologies: ['Next.js', 'Node.js', 'Mongoose', 'Zustand'],

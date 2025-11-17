@@ -23,6 +23,8 @@
   "view-all": "View all ~~>",
   "nice-gadgets": "Nice Gadgets",
   "nice-gadgets-desc": "E-commerce platform for browsing and purchasing gadgets.",
+  "gdp-app": "GDP App",
+  "gdp-app-desc": "Web application for tracking and analyzing GDP and population data across different countries.",
   "dashboard-app": "Dashboard App",
   "dashboard-app-desc": "Full-stack productivity dashboard for managing and tracking tasks in real time.",
   "weather-app": "Weather App",

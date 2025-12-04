@@ -94,6 +94,14 @@ export const projects = [
     github: 'https://github.com/O1ympus/keygen',
   },
   {
+    title: 'brewery-app',
+    subtitle: 'brewery-app-desc',
+    technologies: ['React', 'Next.js', 'TypeScript', 'Zustand'],
+    fileName: 'projects/brewery-app',
+    demo: 'https://brewery-vert.vercel.app/',
+    github: 'https://github.com/O1ympus/brewery',
+  },
+  {
     title: 'weather-app',
     subtitle: 'weather-app-desc',
     technologies: ['Next.js', 'NestJS', 'Sequelize', 'Docker'],

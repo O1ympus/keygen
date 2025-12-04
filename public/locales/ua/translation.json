@@ -25,6 +25,8 @@
   "nice-gadgets-desc": "E-commerce платформа для перегляду та покупки ґаджетів.",
   "gdp-app": "GDP App",
   "gdp-app-desc": "Веб-додаток для відстеження та аналізу даних про ВВП та населення різних країн.",
+  "brewery-app": "Brewery App",
+  "brewery-app-desc": "Веб-додаток для перегляду, вибору та перегляду деталей пивоварень з підтримкою лінивої прокрутки, використовуючи Open Brewery DB API.",
   "weather-app": "Weather App",
   "weather-app-desc": "Додаток погоди з користувачами: зберігає їх та показує погоду й місцезнаходження.",
   "dashboard-app": "Dashboard App",

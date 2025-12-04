@@ -25,6 +25,8 @@
   "nice-gadgets-desc": "E-commerce platform for browsing and purchasing gadgets.",
   "gdp-app": "GDP App",
   "gdp-app-desc": "Web application for tracking and analyzing GDP and population data across different countries.",
+  "brewery-app": "Brewery App",
+  "brewery-app-desc": "Web application for browsing, selecting, and viewing details of breweries with lazy scroll using the Open Brewery DB API.",
   "dashboard-app": "Dashboard App",
   "dashboard-app-desc": "Full-stack productivity dashboard for managing and tracking tasks in real time.",
   "weather-app": "Weather App",
